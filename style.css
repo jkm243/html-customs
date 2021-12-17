@@ -4,7 +4,7 @@ body{
     align-items: center;
     justify-content: center;
     box-shadow: 0 6px 20px rgba(0, 0, 0, .4);
-    background: url("./img/casadepapel.jpg") center / cover; */
+    background: url("./img/casadepapel.jpg") center / cover; 
     /* background-size: "cover"; */
     /* background-image: url("./img/casadepapel.jpg"); */
     background-position: "center center";
