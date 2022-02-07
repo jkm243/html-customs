@@ -1,36 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="img/netflix-logo-png.ico" type="images">
-    <link rel="stylesheet" href="style-sign-up.css">
+    <link rel="stylesheet" href="css/style-sign-up.css">
     <title>Sign Up</title>
-  </head>
-  <body>
-    <div class="container">
-      <div class="bg-img"></div>
-      <div class="content">
-        <form>
-          <div>
-            <input type="text" name="firstname" placeholder="First name" id="firstname" />
-            <input type="text" name="name" placeholder="Last name" id="name" />
-            <input type="tel" name = "tel" placeholder="telephone" id="telephone"/>
-            <input type="email" name="email" placeholder="Email" id="email" />
-            <input
-              type="password"
-              name="password"
-              placeholder="Password"
-              id="password"
-            />
-          </div>
-          <button>Sign Up</button>
-        </form>
-        <p>Do you have an account? <a href="index.html">Sign in now</a></p>
-        <img src="./img/Netflix_logo.png" width="100" align="center" />
-      </div>
+</head>
+
+<body>
+    <div class="container fadeInDown">
+        <div class="bg-img"></div>
+        <div class="content">
+            <form>
+                <div class="fadeIn first">
+                    <input type="text" name="firstname" placeholder="First name" id="firstname" />
+                    <input type="text" name="name" placeholder="Last name" id="name" />
+                    <input type="tel" name="tel" placeholder="Telephone" id="telephone" />
+                    <input type="email" name="email" placeholder="Email" id="email" />
+                    <input type="password" name="password" placeholder="Password" id="password" />
+
+                    <!-- Verification -->
+                    <div id="message2">dfh</div>
+
+                    <div id="message">
+                        <h6>Le mot de passe doit contenir:</h6>
+                        <p id="letter" class="invalid">Une lettre <b>minuscule</b></p>
+                        <p id="capital" class="invalid">Une lettre <b>majuscule</b></p>
+                        <p id="number" class="invalid">Un <b>chiffre</b></p>
+                        <p id="length" class="invalid">Au minimum<b> 8 caractères</b></p>
+                    </div>
+                    <!-- End Verification -->
+
+                </div>
+                <button class="fadeIn second">Sign Up</button>
+            </form>
+            <p class="fadeIn third question">Do you have an account? <a href="index.html">Sign in now</a></p>
+            <img class="fadeIn fourth" src="./img/Netflix_logo.png" width="100" align="center" />
+        </div>
     </div>
     <div className="banner_fadeBottom"></div>
-  </body>
+</body>
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/main.js" type="text/javascript"></script>
+
 </html>

@@ -1,33 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="img/netflix-logo-png.ico" type="images">
-    <link rel="stylesheet" href="style.css">
-    <title>Sign In</title>
-  </head>
-  <body>
-    <div class="container">
-      <div class="bg-img"></div>
-      <div class="content">
-        <form>
-          <div>
-            <input type="email" name="email" placeholder="Email" id="email" />
-            <input
-              type="password"
-              name="password"
-              placeholder="Password"
-              id="password"
-            />
-          </div>
-          <button>Sign in</button>
-        </form>
-        <p>New to Netflix? <a href="sign-up.html">Sign up now</a></p>
-        <img src="./img/Netflix_logo.png" width="100" align="center" />
-      </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="img/netflix-logo-png.ico" type="images">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Sign In</title>
+</head>
+
+<body>
+  <div class="container fadeInDown">
+    <div class="bg-img"></div>
+    <div class="content">
+      <form>
+        <div>
+          <input type="email" class="fadeIn first" name="email" placeholder="Email" id="email" />
+          <input type="password" class="fadeIn second" name="password" placeholder="Password" id="password" />
+        </div>
+        <!-- Verification -->
+        <div id="message2">dfh</div>
+        <!-- End verification -->
+        <button class="fadeIn third">Sign in</button>
+      </form>
+      <p class="fadeIn fourth">New to Netflix? <a href="sign-up.html">Sign up now</a></p>
+      <img class="fadeIn fourth" src="./img/Netflix_logo.png" width="100" align="center" />
     </div>
-    <div className="banner_fadeBottom"></div>
-  </body>
+  </div>
+  <div className="banner_fadeBottom"></div>
+</body>
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/sign-in.js" type="text/javascript"></script>
+
 </html>
