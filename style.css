@@ -104,3 +104,8 @@ form button{
     text-decoration: none;
     color:#fff;
 }
+
+#password, #email{
+    color:#fff;
+    font-family: "Poppins", sans-serif;
+}
