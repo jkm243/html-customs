@@ -35,7 +35,7 @@
                     <!-- End Verification -->
 
                 </div>
-                <button class="fadeIn second">Sign Up</button>
+                <button class="fadeIn second" onclick="submit()">Sign Up</button>
             </form>
             <p class="fadeIn third question">Do you have an account? <a href="index.html">Sign in now</a></p>
             <img class="fadeIn fourth" src="./img/Netflix_logo.png" width="100" align="center" />
@@ -45,6 +45,8 @@
 </body>
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="js/main.js" type="text/javascript"></script>
+<script src="js/auth.js" type="text/javascript"></script>
+
 <script type="module">
     // Import the functions you need from the SDKs you need
     import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.8/firebase-app.js";
@@ -68,4 +70,6 @@
     const app = initializeApp(firebaseConfig);
     const analytics = getAnalytics(app);
   </script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.8/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.8/firebase-database.js"></script>
 </html>

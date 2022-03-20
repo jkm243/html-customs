@@ -94,7 +94,7 @@ email.addEventListener(
     } else {
       setTimeout(function() {
         message2.style.display = 'block';
-        message2.innerHTML = '* Adresse mail valide';
+        message2.innerHTML = '* Adresse mail val ide';
         message2.style.color = 'rgb(3, 150, 3)';
       }, 1000);
       setTimeout(function() {
